@@ -1,0 +1,114 @@
+.programs{
+  width:100vw;
+  
+  &__img{
+    width:100%;
+  }
+
+  &__card{
+    height:auto;
+    border-radius: 8px;
+    padding: 0.24rem 0.24rem 0.32rem 0.24rem;
+    box-shadow: 0 4px 6px -2px rgba(16, 24, 40, 0.03), 0 0.12rem 0.16rem -4px rgba(16, 24, 40, 0.08);
+    transition: .5s;
+
+    &--active{
+      background-color: #7F56D9;
+
+      .violet{
+        font-weight: 500;
+        color:white;
+      }
+
+      .grey-text,
+      .programs__amount,
+      .programs__author-info p{
+        color:#292929;
+      }
+
+      .programs__author-name{
+        color:black !important;
+      }
+    }
+  }
+
+  &__info{
+    margin-top:0.32rem;
+    font-weight: 600;
+    font-size: 0.14rem;
+    display:flex;
+    flex-direction: column;
+    gap:0.12rem;
+  }
+
+  &__title{
+    font-weight: 600;
+    font-size: 0.24rem;
+    display:flex;
+    justify-content: space-between;
+    cursor:pointer;
+  }
+
+  &__raiting{
+    display:flex;
+    align-items: center;
+
+    svg{
+      margin: 0 0.10rem 0 5px;
+    }
+  }
+
+  &__amount{
+    color:grey;
+    font-weight: 400;
+    font-size: 0.14rem;
+  }
+
+  &__author{
+    margin-top:0.2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-info{
+      display:flex;
+      align-items: center;
+      gap:0.12rem;
+      font-weight: 400;
+      font-size: 0.14rem;
+      color: #667085;
+    }
+
+    &-name{
+      color:black;
+      font-weight: 500;
+      font-size: 0.14rem;
+      margin-bottom:2px;
+    }
+
+    .violet{
+      font-size: 0.26rem;
+      font-weight: 600;
+    }
+  }
+
+  &__explore{
+    display: block;
+    width: 1.73rem;
+    margin: 0.4rem auto 0 auto;
+    padding: 0.1rem 0.16rem;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+    font-weight: 600;
+    font-size: 0.14rem;
+    transition: background-color .5s, color .5s;
+
+    &:hover{
+      background-color:#7F56D9;
+      font-weight: 500;
+      color:white;
+    }
+  }
+
+}

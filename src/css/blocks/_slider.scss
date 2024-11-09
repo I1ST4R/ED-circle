@@ -1,0 +1,26 @@
+.swiper {
+  margin: auto;
+  height: auto;
+}
+
+.swiper-pagination{
+  position:unset;
+  display:flex;
+  justify-content: center;
+  margin-top:40px;
+
+  &-bullet{
+    display:block;
+    width:12px;
+    height:12px;
+    transition: .3s;
+
+    &-active{
+      width:48px;
+      background-color: #7F56D9;
+      border-radius: 6px;
+      transition: .3s;
+    }
+  }
+}
+

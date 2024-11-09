@@ -1,0 +1,217 @@
+
+.main-block{
+  width:100vw;
+  background-image: url(../images/main-block.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:1.5rem 0.2rem 0.6rem 0.2rem;
+
+  .container{
+    padding:0;
+  }
+
+  &__photo{
+    position:absolute;
+    right:0;
+    top:-5.5rem;
+    width:6.21rem;
+    height:5.14rem;
+  }
+
+  &__info{
+    max-width:5.7rem;
+    display:flex;
+    flex-direction: column;
+    gap:0.35rem;
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 0.64rem;
+  }
+
+  & .search{
+    display:none;
+  }
+
+  &__btns{
+    display:flex;
+    gap:0.28rem;
+
+    .btn{
+      padding: 0.16rem 0.28rem;
+      font-size:0.18rem;
+    }
+  }
+
+  &__cards{
+    display:flex;
+    flex-direction: column;
+    gap:0.2rem;
+  }
+
+  &__numbers-info{
+    transform: scale(0);
+    height:0px;
+    margin-top:0.3rem;
+    display:flex;
+    gap:0.2rem;
+  }
+
+  &__advantages{
+    display:flex;
+    gap:0.34rem;
+  }
+  
+  &__advantage{
+    display:flex;
+    align-items: center;
+    gap:0.1rem;
+    border:2px solid transparent;
+    padding: 10px 5px;
+    border-radius: 15px;
+    transition: .5s;
+
+    &:hover{
+      border:2px solid #7F56D9;
+    }
+  }
+
+  &__card{
+    border-radius: 18px;
+    border: 0.76px solid #7f56d9;
+    display:flex;
+    align-items: center;
+    padding: 0.18rem;
+    gap:0.25rem;
+    font-weight: 700;
+    font-size: 0.25rem;
+    background: #f5f5f4;
+
+    svg{
+      width:0.4rem;
+      height:0.4rem;
+    }
+
+    #main-block__circle-svg{
+      width:0.6rem;
+      height:0.6rem;
+    }
+  }
+
+  &__container-svg{
+    border-radius: 0.12rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: #7f56d9;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__collaborations {
+    position:relative;
+    margin-top:0.25rem;
+    display:flex;
+    gap:0.55rem;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.3rem;
+    max-width:1200px;
+  
+    p{
+      line-height: 113%;
+    }
+  }
+
+  &__logos{
+    display:flex;
+    gap:0.4rem;
+
+    svg{
+      color: #8a8a8a;
+      transition: .5s;
+      width:2rem;
+    }
+  
+    svg:hover{
+      color: #7F56D9;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    &__photo{
+      display:none;
+    }
+
+    &__title{
+      font-size: 0.58rem;
+      max-width: 500px;
+      margin:auto;
+    }
+
+    &__numbers-info{
+      transform: scale(1);
+      height:auto;
+      margin:0;
+      gap: 0.1rem;
+    }
+
+    &__info{
+      max-width:100%;
+      text-align: center;
+    }
+
+    &__btns{
+      margin:auto;
+    }
+
+    &__cards{
+      align-items: center;
+    }
+
+    &__collaborations{
+      margin-top: 0.4rem;
+
+      svg{
+        width:20%;
+      }
+
+      p{
+        display:none;
+      }
+    }
+
+    &__logos{
+      justify-content: center;
+    }
+
+    &__advantages{
+      display:none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+
+    &__numbers-info{
+      flex-direction: column;
+    }
+
+    &__logos{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+
+      svg{
+        width: 90%
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
